@@ -1,62 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1889570579
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1889570580}
-  - component: {fileID: 1889570581}
-  m_Layer: 0
-  m_Name: Trigger
-  m_TagString: Enemy
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1889570580
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1889570579}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.33152723, y: 0.88706636, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1609287600291942828}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1889570581
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1889570579}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.33071327, y: -0.8820747}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.7864189, y: 1.4099534}
-  m_EdgeRadius: 0
 --- !u!1 &1609287600291942827
 GameObject:
   m_ObjectHideFlags: 0
@@ -71,6 +14,7 @@ GameObject:
   - component: {fileID: 1609287600291942830}
   - component: {fileID: 1609287600291942831}
   - component: {fileID: 632224964}
+  - component: {fileID: 2568881220786220949}
   m_Layer: 0
   m_Name: Beetle
   m_TagString: Enemy
@@ -88,8 +32,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.04, y: -0.16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1889570580}
+  m_Children: []
   m_Father: {fileID: 8885542711145818142}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -130,8 +73,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -584824235
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 2631103260818236658, guid: 4ca51215a7f82f7459625bf9ee5a886b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -204,6 +147,7 @@ MonoBehaviour:
   health: 5
   flashTime: 0.2
   bloodEffect: {fileID: 310382160627974187, guid: 3315579b3a8b0c149a47db2832be877d, type: 3}
+  damage: 1
   beetleSpeed: 5
   startWaitTime: 1
   movePos: {fileID: 1609287600650635772}
@@ -230,6 +174,36 @@ Rigidbody2D:
   m_SleepingMode: 0
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!60 &2568881220786220949
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1609287600291942827}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.75, y: 1.375}
+    newSize: {x: 0.28, y: 0.22}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.77096367, y: 0.75112784}
+      - {x: -0.27414894, y: 0.7441486}
+      - {x: -0.7231293, y: 0.7345685}
+      - {x: -0.9013901, y: 0.68644714}
+      - {x: 0.89048004, y: 0.6896273}
 --- !u!1 &1609287600650635773
 GameObject:
   m_ObjectHideFlags: 0

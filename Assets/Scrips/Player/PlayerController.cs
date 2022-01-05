@@ -7,13 +7,15 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float runSpeed = 5;
     [SerializeField] private float jumpSpeed = 6;
     [SerializeField] private float doubleJumpSpeed = 6;
+    [SerializeField] private float restoreTime;
     private bool canDoubleJump = false;
-    private Rigidbody2D myRigidbody;
+    public Rigidbody2D myRigidbody;
     private BoxCollider2D myFeet;
     private bool playerHasXAxisSpeed;
     private bool isGround;
+    private bool isOneWayPlatform;
     
-    private Animator myAnimator;
+    public Animator myAnimator;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,9 +27,14 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Flip();
-        Run();
-        Jump();
+        if (GameController.isGameAlive)
+        {
+            Flip();
+            Run();
+            Jump();
+            OneWayPlatformCheck();
+        }
+        
     }
 
     private void Flip()
@@ -35,12 +42,12 @@ public class PlayerController : MonoBehaviour
         playerHasXAxisSpeed = Mathf.Abs(myRigidbody.velocity.x) > Mathf.Epsilon;
         if (playerHasXAxisSpeed)
         {
-            if (myRigidbody.velocity.x > 0)
+            if (myRigidbody.velocity.x > 0.0001f)
             {
                 transform.localRotation = Quaternion.Euler(0,0,0);
             }
             
-            if (myRigidbody.velocity.x < 0)
+            if (myRigidbody.velocity.x < -0.0001f)
             {
                 transform.localRotation = Quaternion.Euler(0,180,0);
             }
@@ -85,9 +92,12 @@ public class PlayerController : MonoBehaviour
     
     private void CheckGrounded()
     {
-        isGround = myFeet.IsTouchingLayers(LayerMask.GetMask("Ground"));
+        isGround = myFeet.IsTouchingLayers(LayerMask.GetMask("Ground"))
+                   || myFeet.IsTouchingLayers(LayerMask.GetMask("MovingPlatform"))
+                   || myFeet.IsTouchingLayers(LayerMask.GetMask("OneWayPlatform"));
+        isOneWayPlatform = myFeet.IsTouchingLayers(LayerMask.GetMask("OneWayPlatform"));
     }
-
+    
     private void SwitchFallAnimation()
     {
         if (myAnimator.GetBool("IsJump"))
@@ -105,6 +115,28 @@ public class PlayerController : MonoBehaviour
         {
             myAnimator.SetBool("IsFall", false);
             myAnimator.SetBool("IsDoubleJump", false);
+        }
+    }
+
+    private void OneWayPlatformCheck()
+    {
+        if (isGround && gameObject.layer != LayerMask.NameToLayer("Player"))
+        {
+            gameObject.layer = LayerMask.NameToLayer("Player");
+        }
+        float moveY = Input.GetAxis("Vertical");
+        if (isOneWayPlatform && moveY < -Mathf.Epsilon)
+        {
+            gameObject.layer = LayerMask.NameToLayer("OneWayPlatform");
+            Invoke("RestorePlayerLayer", restoreTime);
+        }
+    }
+
+    private void RestorePlayerLayer()
+    {
+        if (!isGround && gameObject.layer != LayerMask.NameToLayer("Player"))
+        {
+            gameObject.layer = LayerMask.NameToLayer("Player");
         }
     }
 }

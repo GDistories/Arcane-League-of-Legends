@@ -6,12 +6,12 @@ using UnityEngine;
 public abstract class Enemy : MonoBehaviour
 {
     
-    [SerializeField] private int health;
+    [SerializeField] protected int health;
     [SerializeField] private float flashTime = 0.2f;
     [SerializeField] private GameObject bloodEffect;
     [SerializeField] private int damage = 1;
 
-
+    private int currentHealth;
     private PlayerHealth playerHealth;
     private SpriteRenderer spriteRenderer;
     private Color originalColor;
@@ -23,6 +23,7 @@ public abstract class Enemy : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         originalColor = spriteRenderer.color;
         playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
+        currentHealth = health;
     }
 
     // Update is called once per frame
@@ -47,7 +48,7 @@ public abstract class Enemy : MonoBehaviour
 
     private void isDie()
     {
-        if (health <= 0)
+        if (currentHealth <= 0)
         {
             Destroy(gameObject);
         }
@@ -55,7 +56,7 @@ public abstract class Enemy : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        health -= damage;
+        currentHealth -= damage;
         FlashColor(flashTime);
         Instantiate(bloodEffect, transform.position, Quaternion.identity);
         GameController.camShake.Shake();

@@ -13,10 +13,15 @@ public class PlayerHealth : MonoBehaviour
     private float nextDamageTime = 0;
     private Renderer myRenderer;
     private bool canTakeDamage = true;
+
+    private ScreenFlash screenFlash;
     // Start is called before the first frame update
     void Start()
     {
         myRenderer = GetComponent<Renderer>();
+        HealthBar.HealthMax = health;
+        HealthBar.HealthCurrent = health;
+        screenFlash = GetComponent<ScreenFlash>();
     }
 
     // Update is called once per frame
@@ -30,12 +35,15 @@ public class PlayerHealth : MonoBehaviour
         if (canTakeDamage)
         {
             health -= damage;
+            HealthBar.HealthCurrent = health;
             BlinkPlayer(Blinks, time);
+            screenFlash.FlashScreen();
             canTakeDamage = false;
             nextDamageTime = timeBetweenDamage + Time.time;
         }
         if (health <= 0)
         {
+            GameController.isGameAlive = false;
             Destroy(gameObject);
         }
     }

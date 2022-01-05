@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,6 +15,7 @@ public class EnemyBeetle : Enemy
     private bool moveRight = true;
     private float originalY;
     private float waitTime;
+    private PlayerController playerController;
 
     new void Start()
     {
@@ -21,6 +23,7 @@ public class EnemyBeetle : Enemy
         waitTime = startWaitTime;
         movePos = rightPos;
         originalY = transform.position.y;
+        playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
     }
 
     new void Update()
@@ -68,5 +71,16 @@ public class EnemyBeetle : Enemy
             transform.localRotation = Quaternion.Euler(0,180,0);
         }
     }
-    
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            playerController.myAnimator.SetBool("IsJump", true);
+            playerController.myAnimator.SetBool("IsDoubleJump", true);
+            Vector2 doubleJumpVel = new Vector2(0, 10);
+            playerController.myRigidbody.velocity = Vector2.up * doubleJumpVel;
+            TakeDamage(health/2);
+        }
+    }
 }
