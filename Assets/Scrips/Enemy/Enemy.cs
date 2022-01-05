@@ -22,6 +22,20 @@ public abstract class Enemy : MonoBehaviour
     public void Update()
     {
         isDie();
+        Flip();
+    }
+
+    private void Flip()
+    {
+        // if ()
+        // {
+        //     transform.localRotation = Quaternion.Euler(0,0,0);
+        // }
+        //     
+        // if ()
+        // {
+        //     transform.localRotation = Quaternion.Euler(0,180,0);
+        // }
     }
 
     private void isDie()
