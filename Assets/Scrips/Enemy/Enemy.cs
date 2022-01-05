@@ -7,6 +7,7 @@ public abstract class Enemy : MonoBehaviour
     [SerializeField] private int damage;
     [SerializeField] private int health;
     [SerializeField] private float flashTime = 0.2f;
+    [SerializeField] private GameObject bloodEffect;
     private SpriteRenderer spriteRenderer;
     private Color originalColor;
     
@@ -50,6 +51,8 @@ public abstract class Enemy : MonoBehaviour
     {
         health -= damage;
         FlashColor(flashTime);
+        Instantiate(bloodEffect, transform.position, Quaternion.identity);
+        GameController.camShake.Shake();
     }
     
     private void FlashColor(float time)

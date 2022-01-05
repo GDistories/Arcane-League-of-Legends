@@ -6,7 +6,6 @@ public class EnemyBeetle : Enemy
 {
     [SerializeField] private float beetleSpeed = 5;
     [SerializeField] private float startWaitTime;
-
     [SerializeField] private Transform movePos;
     [SerializeField] private Transform leftPos;
     [SerializeField] private Transform rightPos;
@@ -32,8 +31,8 @@ public class EnemyBeetle : Enemy
 
     private void EnemyMove(Vector2 position)
     {
+        Flip();
         transform.position = Vector2.MoveTowards(transform.position,new Vector2(movePos.position.x, transform.position.y), beetleSpeed * Time.deltaTime);
-        // print(Vector2.Distance(transform.position, movePos.position));
         if (Mathf.Abs(transform.position.x - movePos.position.x) < Mathf.Epsilon)
         {
             if (waitTime <= 0)
@@ -56,5 +55,18 @@ public class EnemyBeetle : Enemy
                 waitTime -= Time.deltaTime;
             }
         }
-    } 
+    }
+
+    private void Flip()
+    {
+        if (transform.position.x - movePos.position.x > 0)
+        {
+            transform.localRotation = Quaternion.Euler(0,0,0);
+        }
+        else if (transform.position.x - movePos.position.x < 0)
+        {
+            transform.localRotation = Quaternion.Euler(0,180,0);
+        }
+    }
+    
 }

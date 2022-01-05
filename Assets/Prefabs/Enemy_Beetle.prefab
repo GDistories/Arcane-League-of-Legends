@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1889570579}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.33152723, y: 0.88706636, z: -23.568}
+  m_LocalPosition: {x: -0.33152723, y: 0.88706636, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1609287600291942828}
@@ -70,6 +70,7 @@ GameObject:
   - component: {fileID: 1609287600291942826}
   - component: {fileID: 1609287600291942830}
   - component: {fileID: 1609287600291942831}
+  - component: {fileID: 632224964}
   m_Layer: 0
   m_Name: Beetle
   m_TagString: Enemy
@@ -85,7 +86,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1609287600291942827}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.6451716, y: -3.4766288, z: 8.533439}
+  m_LocalPosition: {x: 0.04, y: -0.16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1889570580}
@@ -203,11 +204,33 @@ MonoBehaviour:
   damage: 1
   health: 5
   flashTime: 0.2
+  bloodEffect: {fileID: 310382160627974187, guid: 3315579b3a8b0c149a47db2832be877d, type: 3}
   beetleSpeed: 5
   startWaitTime: 1
   movePos: {fileID: 1609287600650635772}
   leftPos: {fileID: 1609287601011475485}
   rightPos: {fileID: 1609287600650635772}
+--- !u!50 &632224964
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1609287600291942827}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 1
+  m_Constraints: 4
 --- !u!1 &1609287600650635773
 GameObject:
   m_ObjectHideFlags: 0
@@ -232,7 +255,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1609287600650635773}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.07, y: -2.6, z: 8.533439}
+  m_LocalPosition: {x: 7.2, y: -0.63, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8885542711145818142}
@@ -262,7 +285,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1609287601011475482}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.82, y: -2.84, z: 8.533439}
+  m_LocalPosition: {x: -9.67, y: -1.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8885542711145818142}
