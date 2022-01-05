@@ -468,7 +468,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1796032606}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 85530b0a289b63744a36c45804d330d8, type: 2}
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -513,6 +513,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 10
+  Blinks: 2
+  time: 0.1
   timeBetweenDamage: 0.5
 --- !u!1 &1803648202
 GameObject:
