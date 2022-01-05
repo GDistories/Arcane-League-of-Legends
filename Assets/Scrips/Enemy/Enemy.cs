@@ -1,13 +1,18 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public abstract class Enemy : MonoBehaviour
 {
-    [SerializeField] private int damage;
+    
     [SerializeField] private int health;
     [SerializeField] private float flashTime = 0.2f;
     [SerializeField] private GameObject bloodEffect;
+    [SerializeField] private int damage = 1;
+
+
+    private PlayerHealth playerHealth;
     private SpriteRenderer spriteRenderer;
     private Color originalColor;
     
@@ -17,6 +22,7 @@ public abstract class Enemy : MonoBehaviour
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         originalColor = spriteRenderer.color;
+        playerHealth = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHealth>();
     }
 
     // Update is called once per frame
@@ -64,5 +70,13 @@ public abstract class Enemy : MonoBehaviour
     private void ResetColor()
     {
         spriteRenderer.color = originalColor;
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            playerHealth.DamagePlayer(damage);
+        }
     }
 }
