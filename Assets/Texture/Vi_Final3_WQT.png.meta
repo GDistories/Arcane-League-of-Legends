@@ -1,0 +1,666 @@
+fileFormatVersion: 2
+guid: 8ef414928d3d4f842bcff308915f7f46
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2065841535600738048
+    second: Vi_Final3_WQT_0
+  - first:
+      213: -1224653151332979187
+    second: Vi_Final3_WQT_1
+  - first:
+      213: -1327157767308883317
+    second: Vi_Final3_WQT_2
+  - first:
+      213: 2249779014714531700
+    second: Vi_Final3_WQT_3
+  - first:
+      213: 6220134317432943806
+    second: Vi_Final3_WQT_4
+  - first:
+      213: -2185313671796399751
+    second: Vi_Final3_WQT_5
+  - first:
+      213: -6560072324579336993
+    second: Vi_Final3_WQT_6
+  - first:
+      213: -2559833648793264882
+    second: Vi_Final3_WQT_7
+  - first:
+      213: 8874942606502630876
+    second: Vi_Final3_WQT_8
+  - first:
+      213: 5282871251845915665
+    second: Vi_Final3_WQT_9
+  - first:
+      213: -5770542151549679640
+    second: Vi_Final3_WQT_10
+  - first:
+      213: -3313335878913868110
+    second: Vi_Final3_WQT_11
+  - first:
+      213: -9168156645871657937
+    second: Vi_Final3_WQT_12
+  - first:
+      213: -8983871939031822835
+    second: Vi_Final3_WQT_13
+  - first:
+      213: -283638731781894018
+    second: Vi_Final3_WQT_14
+  - first:
+      213: -565827907120484856
+    second: Vi_Final3_WQT_15
+  - first:
+      213: -9161715922489228031
+    second: Vi_Final3_WQT_16
+  - first:
+      213: 1077060839793087640
+    second: Vi_Final3_WQT_17
+  - first:
+      213: -1551627242486985835
+    second: Vi_Final3_WQT_18
+  - first:
+      213: -6007887493926374510
+    second: Vi_Final3_WQT_19
+  - first:
+      213: -3352342494790057400
+    second: Vi_Final3_WQT_20
+  - first:
+      213: -6720726975843298065
+    second: Vi_Final3_WQT_21
+  - first:
+      213: -7562450303829637114
+    second: Vi_Final3_WQT_22
+  - first:
+      213: -8471877393028669357
+    second: Vi_Final3_WQT_23
+  - first:
+      213: -4470643221420172928
+    second: Vi_Final3_WQT_24
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Vi_Final3_WQT_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 137
+        width: 30
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00145449118a453e0800000000000000
+      internalID: -2065841535600738048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vi_Final3_WQT_1
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 137
+        width: 30
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0e2cb58278210fe0800000000000000
+      internalID: -1224653151332979187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vi_Final3_WQT_2
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 137
+        width: 30
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8a47aeca0df49de0800000000000000
+      internalID: -1327157767308883317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vi_Final3_WQT_3
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 137
+        width: 30
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47f10331812d83f10800000000000000
+      internalID: 2249779014714531700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vi_Final3_WQT_4
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 137
+        width: 30
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb4becdb43b525650800000000000000
+      internalID: 6220134317432943806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vi_Final3_WQT_5
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 137
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97165c53bc43ca1e0800000000000000
+      internalID: -2185313671796399751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vi_Final3_WQT_6
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 137
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdcd3904af0f5f4a0800000000000000
+      internalID: -6560072324579336993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vi_Final3_WQT_7
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 137
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0dd597ebd4a97cd0800000000000000
+      internalID: -2559833648793264882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vi_Final3_WQT_8
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 73
+        width: 30
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd5919677412a2b70800000000000000
+      internalID: 8874942606502630876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vi_Final3_WQT_9
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 73
+        width: 30
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1142668e967805940800000000000000
+      internalID: 5282871251845915665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vi_Final3_WQT_10
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 73
+        width: 28
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e7867f9c7aeaefa0800000000000000
+      internalID: -5770542151549679640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vi_Final3_WQT_11
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 73
+        width: 28
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2be38cba29aa402d0800000000000000
+      internalID: -3313335878913868110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vi_Final3_WQT_12
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 73
+        width: 28
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2cdea50b1a24c080800000000000000
+      internalID: -9168156645871657937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vi_Final3_WQT_13
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 73
+        width: 28
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0e886ee110e25380800000000000000
+      internalID: -8983871939031822835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vi_Final3_WQT_14
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 73
+        width: 28
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7019938310501cf0800000000000000
+      internalID: -283638731781894018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vi_Final3_WQT_15
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 73
+        width: 28
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80ea4103486c528f0800000000000000
+      internalID: -565827907120484856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vi_Final3_WQT_16
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 9
+        width: 28
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1054dfac8eb0bd080800000000000000
+      internalID: -9161715922489228031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vi_Final3_WQT_17
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 9
+        width: 28
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 894d955902d72fe00800000000000000
+      internalID: 1077060839793087640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vi_Final3_WQT_18
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 9
+        width: 39
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59b8ebb6e33877ae0800000000000000
+      internalID: -1551627242486985835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vi_Final3_WQT_20
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 9
+        width: 28
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 842879033461a71d0800000000000000
+      internalID: -3352342494790057400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vi_Final3_WQT_21
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 9
+        width: 34
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe499746c6e2bb2a0800000000000000
+      internalID: -6720726975843298065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vi_Final3_WQT_23
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 9
+        width: 28
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3502ddf9568dd6a80800000000000000
+      internalID: -8471877393028669357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vi_Final3_WQT_24
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 9
+        width: 28
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0891eb53da515f1c0800000000000000
+      internalID: -4470643221420172928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
