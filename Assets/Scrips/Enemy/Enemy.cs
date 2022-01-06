@@ -10,7 +10,8 @@ public abstract class Enemy : MonoBehaviour
     [SerializeField] private float flashTime = 0.2f;
     [SerializeField] private GameObject bloodEffect;
     [SerializeField] private int damage = 1;
-
+    [SerializeField] private GameObject floatPoint;
+    [SerializeField] private GameObject dropCoin;
     private int currentHealth;
     private PlayerHealth playerHealth;
     private SpriteRenderer spriteRenderer;
@@ -50,12 +51,15 @@ public abstract class Enemy : MonoBehaviour
     {
         if (currentHealth <= 0)
         {
+            Instantiate(dropCoin, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
     }
 
     public void TakeDamage(int damage)
     {
+        GameObject floatP = Instantiate(floatPoint, transform.position, Quaternion.identity) as GameObject;
+        floatP.transform.GetChild(0).GetComponent<TextMesh>().text = "-" + damage;
         currentHealth -= damage;
         FlashColor(flashTime);
         Instantiate(bloodEffect, transform.position, Quaternion.identity);

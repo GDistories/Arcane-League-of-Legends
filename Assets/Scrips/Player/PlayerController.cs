@@ -55,7 +55,6 @@ public class PlayerController : MonoBehaviour
         if (isLadder)
         {
             float moveY = Input.GetAxis("Vertical");
-            print(moveY);
             if (moveY > 0.5f || moveY < -0.5f)
             {
                 myRigidbody.gravityScale = 0;
@@ -174,7 +173,7 @@ public class PlayerController : MonoBehaviour
         //     gameObject.layer = LayerMask.NameToLayer("Player");
         // }
         float moveY = Input.GetAxis("Vertical");
-        if (isOneWayPlatform && moveY < -0.5f)
+        if (isOneWayPlatform && moveY < -Mathf.Epsilon)
         {
             gameObject.layer = LayerMask.NameToLayer("OneWayPlatform");
             Invoke("RestorePlayerLayer", restoreTime);

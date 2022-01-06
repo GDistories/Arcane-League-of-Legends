@@ -74,7 +74,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -584824235
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 2631103260818236658, guid: 4ca51215a7f82f7459625bf9ee5a886b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -148,6 +148,8 @@ MonoBehaviour:
   flashTime: 0.2
   bloodEffect: {fileID: 310382160627974187, guid: 3315579b3a8b0c149a47db2832be877d, type: 3}
   damage: 1
+  floatPoint: {fileID: 7264697209438089138, guid: 7197342210a782346bcea7221fb9c4d5, type: 3}
+  dropCoin: {fileID: 6572773344690063405, guid: 77cfa0cd3cb3dd44d8a339b708af31c3, type: 3}
   beetleSpeed: 5
   startWaitTime: 1
   movePos: {fileID: 1609287600650635772}
@@ -199,11 +201,11 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.77096367, y: 0.75112784}
+    - - {x: 0.0075035095, y: 0.7412957}
       - {x: -0.27414894, y: 0.7441486}
-      - {x: -0.7231293, y: 0.7345685}
-      - {x: -0.9013901, y: 0.68644714}
-      - {x: 0.89048004, y: 0.6896273}
+      - {x: -0.28743744, y: 0.74443614}
+      - {x: -0.28483772, y: 0.6874814}
+      - {x: 0.007270813, y: 0.6880878}
 --- !u!1 &1609287600650635773
 GameObject:
   m_ObjectHideFlags: 0
