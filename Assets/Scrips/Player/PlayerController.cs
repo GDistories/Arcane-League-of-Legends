@@ -20,6 +20,8 @@ public class PlayerController : MonoBehaviour
     private bool isOneWayPlatform;
     private bool isLadder;
     private bool isClimbing;
+    private bool isLight = true;
+    private GameObject playerFlashlight;
 
     // private bool isJumping;
     // private bool isFalling;
@@ -33,6 +35,7 @@ public class PlayerController : MonoBehaviour
         myFeet = GetComponent<BoxCollider2D>();
         myCollider = GetComponent<PolygonCollider2D>();
         originalGravity = myRigidbody.gravityScale;
+        playerFlashlight = GameObject.FindGameObjectWithTag("PlayerFlashlight");
     }
 
     // Update is called once per frame
@@ -45,6 +48,7 @@ public class PlayerController : MonoBehaviour
             Jump();
             OneWayPlatformCheck();
             Climb();
+            Light();
         }
         
     }
@@ -187,5 +191,21 @@ public class PlayerController : MonoBehaviour
             gameObject.layer = LayerMask.NameToLayer("Player");
         }
     }
-    
+
+    private void Light()
+    {
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            print("L");
+            isLight = !isLight;
+            if (isLight)
+            {
+                playerFlashlight.SetActive(true);
+            }
+            else
+            {
+                playerFlashlight.SetActive(false);
+            }
+        }
+    }
 }
