@@ -21,6 +21,7 @@ public class CoinItem : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player") && other.GetType().ToString() == "UnityEngine.PolygonCollider2D")
         {
+            SoundMananger.PlayAudioOneShot(SoundMananger.pickCoin);
             CoinUI.currentCoinQuantity += 1;
             Destroy(gameObject);
         }
