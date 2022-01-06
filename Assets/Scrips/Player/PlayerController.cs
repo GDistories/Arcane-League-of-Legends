@@ -7,13 +7,22 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float runSpeed = 5;
     [SerializeField] private float jumpSpeed = 6;
     [SerializeField] private float doubleJumpSpeed = 6;
+    [SerializeField] private float climbSpeed = 5;
     [SerializeField] private float restoreTime;
+
+    private float originalGravity;
     private bool canDoubleJump = false;
     public Rigidbody2D myRigidbody;
     private BoxCollider2D myFeet;
+    private PolygonCollider2D myCollider;
     private bool playerHasXAxisSpeed;
     private bool isGround;
     private bool isOneWayPlatform;
+    private bool isLadder;
+    private bool isClimbing;
+
+    // private bool isJumping;
+    // private bool isFalling;
     
     public Animator myAnimator;
     // Start is called before the first frame update
@@ -22,6 +31,8 @@ public class PlayerController : MonoBehaviour
         myRigidbody = GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
         myFeet = GetComponent<BoxCollider2D>();
+        myCollider = GetComponent<PolygonCollider2D>();
+        originalGravity = myRigidbody.gravityScale;
     }
 
     // Update is called once per frame
@@ -33,6 +44,31 @@ public class PlayerController : MonoBehaviour
             Run();
             Jump();
             OneWayPlatformCheck();
+            Climb();
+        }
+        
+    }
+    
+    private void Climb()
+    {
+        CheckLeadder();
+        if (isLadder)
+        {
+            float moveY = Input.GetAxis("Vertical");
+            print(moveY);
+            if (moveY > 0.5f || moveY < -0.5f)
+            {
+                myRigidbody.gravityScale = 0;
+                myRigidbody.velocity = new Vector2(myRigidbody.velocity.x, moveY * climbSpeed);
+            }
+            else
+            {
+                myRigidbody.velocity = new Vector2(myRigidbody.velocity.x, 0);
+            }
+        }
+        else
+        {
+            myRigidbody.gravityScale = originalGravity;
         }
         
     }
@@ -69,6 +105,8 @@ public class PlayerController : MonoBehaviour
         SwitchFallAnimation();
         if (Input.GetButtonDown("Jump"))
         {
+            if(isLadder)
+                return;
             if (isGround)
             {
                 myAnimator.SetBool("IsJump", true);
@@ -97,6 +135,11 @@ public class PlayerController : MonoBehaviour
                    || myFeet.IsTouchingLayers(LayerMask.GetMask("OneWayPlatform"));
         isOneWayPlatform = myFeet.IsTouchingLayers(LayerMask.GetMask("OneWayPlatform"));
     }
+
+    private void CheckLeadder()
+    {
+        isLadder = myFeet.IsTouchingLayers(LayerMask.GetMask("Ladder"));
+    }
     
     private void SwitchFallAnimation()
     {
@@ -124,8 +167,14 @@ public class PlayerController : MonoBehaviour
         {
             gameObject.layer = LayerMask.NameToLayer("Player");
         }
+
+        // if (!myCollider.IsTouchingLayers(LayerMask.GetMask("OneWayPlatform")) 
+        //     && !myFeet.IsTouchingLayers(LayerMask.GetMask("OneWayPlatform")))
+        // {
+        //     gameObject.layer = LayerMask.NameToLayer("Player");
+        // }
         float moveY = Input.GetAxis("Vertical");
-        if (isOneWayPlatform && moveY < -Mathf.Epsilon)
+        if (isOneWayPlatform && moveY < -0.5f)
         {
             gameObject.layer = LayerMask.NameToLayer("OneWayPlatform");
             Invoke("RestorePlayerLayer", restoreTime);
@@ -139,4 +188,5 @@ public class PlayerController : MonoBehaviour
             gameObject.layer = LayerMask.NameToLayer("Player");
         }
     }
+    
 }

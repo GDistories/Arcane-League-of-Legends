@@ -20,7 +20,7 @@ TagManager:
   - Spike
   - OneWayPlatform
   - MovingPlatform
-  - 
+  - Ladder
   - 
   - 
   - 
@@ -51,6 +51,9 @@ TagManager:
     locked: 0
   - name: Wall
     uniqueID: 3541525031
+    locked: 0
+  - name: Ladder
+    uniqueID: 3788942305
     locked: 0
   - name: Enemy
     uniqueID: 3710143061
