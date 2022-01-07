@@ -6,4 +6,6 @@ public class GameController : MonoBehaviour
 {
     public static bool isGameAlive = true;
     public static CameraShake camShake;
+    public static bool canSickle;
+    public static bool canPass = false;
 }

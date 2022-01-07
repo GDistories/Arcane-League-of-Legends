@@ -46,6 +46,7 @@ public class Sickle : MonoBehaviour
         }
         if(Mathf.Abs(transform.position.x - playerTransform.position.x) < 0.5f)
         {
+            GameController.canSickle = true;
             Destroy(gameObject);
         }
     }

@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float restoreTime;
 
     private float originalGravity;
-    private bool canDoubleJump = false;
+    private bool canDoubleJump = true;
     public Rigidbody2D myRigidbody;
     private BoxCollider2D myFeet;
     private PolygonCollider2D myCollider;

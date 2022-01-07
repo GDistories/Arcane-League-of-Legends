@@ -8,7 +8,7 @@ public class SickleHit : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        GameController.canSickle = true;
     }
 
     // Update is called once per frame
@@ -16,7 +16,11 @@ public class SickleHit : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.U))
         {
-            Instantiate(sickle, transform.position, transform.rotation);
+            if (GameController.canSickle)
+            {
+                GameController.canSickle = false;
+                Instantiate(sickle, transform.position, transform.rotation);
+            }
         }
     }
 }
