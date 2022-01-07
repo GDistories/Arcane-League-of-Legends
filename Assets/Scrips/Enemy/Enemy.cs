@@ -12,10 +12,14 @@ public abstract class Enemy : MonoBehaviour
     [SerializeField] private int damage = 1;
     [SerializeField] private GameObject floatPoint;
     [SerializeField] private GameObject dropCoin;
+    [SerializeField] private float timeBetweenDamage = 1f;
+
+    private float nextDamageTime = 0;
     private int currentHealth;
     private PlayerHealth playerHealth;
     private SpriteRenderer spriteRenderer;
     private Color originalColor;
+    private bool canTakeDamage = true;
     
     
     // Start is called before the first frame update
@@ -32,6 +36,7 @@ public abstract class Enemy : MonoBehaviour
     {
         isDie();
         Flip();
+        updateDamageTime();
     }
 
     private void Flip()
@@ -58,12 +63,15 @@ public abstract class Enemy : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
+        if (!canTakeDamage) return;
         GameObject floatP = Instantiate(floatPoint, transform.position, Quaternion.identity) as GameObject;
         floatP.transform.GetChild(0).GetComponent<TextMesh>().text = "-" + damage;
         currentHealth -= damage;
         FlashColor(flashTime);
         Instantiate(bloodEffect, transform.position, Quaternion.identity);
         GameController.camShake.Shake();
+        canTakeDamage = false;
+        nextDamageTime = timeBetweenDamage + Time.time;
     }
     
     private void FlashColor(float time)
@@ -82,6 +90,14 @@ public abstract class Enemy : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             playerHealth.DamagePlayer(damage);
+        }
+    }
+    
+    private void updateDamageTime()
+    {
+        if (Time.time > nextDamageTime)
+        {
+            canTakeDamage = true;
         }
     }
 }

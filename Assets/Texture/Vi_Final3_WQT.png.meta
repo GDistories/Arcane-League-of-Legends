@@ -169,12 +169,12 @@ TextureImporter:
       name: Vi_Final3_WQT_0
       rect:
         serializedVersion: 2
-        x: 15
-        y: 137
-        width: 30
-        height: 43
+        x: 0
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -190,12 +190,12 @@ TextureImporter:
       name: Vi_Final3_WQT_1
       rect:
         serializedVersion: 2
-        x: 79
-        y: 137
-        width: 30
-        height: 43
+        x: 64
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -211,12 +211,12 @@ TextureImporter:
       name: Vi_Final3_WQT_2
       rect:
         serializedVersion: 2
-        x: 143
-        y: 137
-        width: 30
-        height: 43
+        x: 128
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -232,12 +232,12 @@ TextureImporter:
       name: Vi_Final3_WQT_3
       rect:
         serializedVersion: 2
-        x: 207
-        y: 137
-        width: 30
-        height: 43
+        x: 192
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -253,12 +253,12 @@ TextureImporter:
       name: Vi_Final3_WQT_4
       rect:
         serializedVersion: 2
-        x: 271
-        y: 137
-        width: 30
-        height: 43
+        x: 256
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -274,12 +274,12 @@ TextureImporter:
       name: Vi_Final3_WQT_5
       rect:
         serializedVersion: 2
-        x: 335
-        y: 137
-        width: 29
-        height: 44
+        x: 320
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -295,12 +295,12 @@ TextureImporter:
       name: Vi_Final3_WQT_6
       rect:
         serializedVersion: 2
-        x: 399
-        y: 137
-        width: 29
-        height: 44
+        x: 384
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -316,12 +316,12 @@ TextureImporter:
       name: Vi_Final3_WQT_7
       rect:
         serializedVersion: 2
-        x: 463
-        y: 137
-        width: 29
-        height: 44
+        x: 448
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -337,12 +337,12 @@ TextureImporter:
       name: Vi_Final3_WQT_8
       rect:
         serializedVersion: 2
-        x: 15
-        y: 73
-        width: 30
-        height: 43
+        x: 0
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -358,12 +358,12 @@ TextureImporter:
       name: Vi_Final3_WQT_9
       rect:
         serializedVersion: 2
-        x: 79
-        y: 73
-        width: 30
-        height: 43
+        x: 64
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -379,12 +379,12 @@ TextureImporter:
       name: Vi_Final3_WQT_10
       rect:
         serializedVersion: 2
-        x: 147
-        y: 73
-        width: 28
-        height: 40
+        x: 128
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -400,12 +400,12 @@ TextureImporter:
       name: Vi_Final3_WQT_11
       rect:
         serializedVersion: 2
-        x: 211
-        y: 73
-        width: 28
-        height: 41
+        x: 192
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -421,12 +421,12 @@ TextureImporter:
       name: Vi_Final3_WQT_12
       rect:
         serializedVersion: 2
-        x: 274
-        y: 73
-        width: 28
-        height: 41
+        x: 256
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -442,12 +442,12 @@ TextureImporter:
       name: Vi_Final3_WQT_13
       rect:
         serializedVersion: 2
-        x: 338
-        y: 73
-        width: 28
-        height: 40
+        x: 320
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -463,12 +463,12 @@ TextureImporter:
       name: Vi_Final3_WQT_14
       rect:
         serializedVersion: 2
-        x: 402
-        y: 73
-        width: 28
-        height: 40
+        x: 384
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -484,12 +484,12 @@ TextureImporter:
       name: Vi_Final3_WQT_15
       rect:
         serializedVersion: 2
-        x: 467
-        y: 73
-        width: 28
-        height: 41
+        x: 448
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -505,12 +505,12 @@ TextureImporter:
       name: Vi_Final3_WQT_16
       rect:
         serializedVersion: 2
-        x: 19
-        y: 9
-        width: 28
-        height: 41
+        x: 0
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -526,12 +526,12 @@ TextureImporter:
       name: Vi_Final3_WQT_17
       rect:
         serializedVersion: 2
-        x: 81
-        y: 9
-        width: 28
-        height: 40
+        x: 64
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -547,12 +547,12 @@ TextureImporter:
       name: Vi_Final3_WQT_18
       rect:
         serializedVersion: 2
-        x: 145
-        y: 9
-        width: 39
-        height: 40
+        x: 128
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -568,12 +568,12 @@ TextureImporter:
       name: Vi_Final3_WQT_20
       rect:
         serializedVersion: 2
-        x: 209
-        y: 9
-        width: 28
-        height: 40
+        x: 256
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -589,12 +589,12 @@ TextureImporter:
       name: Vi_Final3_WQT_21
       rect:
         serializedVersion: 2
-        x: 274
-        y: 9
-        width: 34
-        height: 41
+        x: 320
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -607,43 +607,43 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Vi_Final3_WQT_23
+      name: Vi_Final3_WQT_19
       rect:
         serializedVersion: 2
-        x: 339
-        y: 9
-        width: 28
-        height: 40
+        x: 192
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3502ddf9568dd6a80800000000000000
-      internalID: -8471877393028669357
+      spriteID: 293b10ac722bf9ca0800000000000000
+      internalID: -6007887493926374510
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Vi_Final3_WQT_24
+      name: Vi_Final3_WQT_22
       rect:
         serializedVersion: 2
-        x: 403
-        y: 9
-        width: 28
-        height: 40
+        x: 384
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0891eb53da515f1c0800000000000000
-      internalID: -4470643221420172928
+      spriteID: 60880b82487cc0790800000000000000
+      internalID: -7562450303829637114
       vertices: []
       indices: 
       edges: []

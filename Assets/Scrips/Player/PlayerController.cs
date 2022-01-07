@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
     private bool isOneWayPlatform;
     private bool isLadder;
     private bool isClimbing;
-    private bool isLight = true;
+    private bool isLight = false;
     private GameObject playerFlashlight;
 
     // private bool isJumping;
@@ -36,6 +36,7 @@ public class PlayerController : MonoBehaviour
         myCollider = GetComponent<PolygonCollider2D>();
         originalGravity = myRigidbody.gravityScale;
         playerFlashlight = GameObject.FindGameObjectWithTag("PlayerFlashlight");
+        playerFlashlight.SetActive(false);
     }
 
     // Update is called once per frame

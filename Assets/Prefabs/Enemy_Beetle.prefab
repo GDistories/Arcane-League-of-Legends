@@ -150,6 +150,7 @@ MonoBehaviour:
   damage: 1
   floatPoint: {fileID: 7264697209438089138, guid: 7197342210a782346bcea7221fb9c4d5, type: 3}
   dropCoin: {fileID: 6572773344690063405, guid: 77cfa0cd3cb3dd44d8a339b708af31c3, type: 3}
+  timeBetweenDamage: 0.2
   beetleSpeed: 5
   startWaitTime: 1
   movePos: {fileID: 1609287600650635772}

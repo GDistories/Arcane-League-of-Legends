@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class LevelPass : MonoBehaviour
 {
+    public int sceneNum;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,12 +21,12 @@ public class LevelPass : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D other)
     {
-        if (Input.GetKeyDown(KeyCode.O))
-        {
+        // if (Input.GetKeyDown(KeyCode.O))
+        // {
             if (GameController.canPass)
             {
-                SceneManager.LoadScene(2);
+                SceneManager.LoadScene(sceneNum);
             }
-        }
+        // }
     }
 }
