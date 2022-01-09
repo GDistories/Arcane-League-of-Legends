@@ -1,18 +1,54 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public GameObject PauseMenuObj;
+    public GameObject DieMenuObj;
+
+    private void Start()
     {
-        
+
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            PauseMenuObj.SetActive(true);
+            Time.timeScale = 0;
+        }
+
+        if (!GameController.isGameAlive)
+        {
+            DieMenuObj.SetActive(true);
+            Time.timeScale = 0;
+        }
     }
+    public void ResumeGame()
+    {
+        PauseMenuObj.SetActive(false);
+        Time.timeScale = 1;
+    }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene(0);
+        Time.timeScale = 1;
+    }
+    
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
+    public void ResetGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        GameController.isGameAlive = true;
+    }
+    
 }

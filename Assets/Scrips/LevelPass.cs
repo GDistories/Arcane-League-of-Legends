@@ -10,7 +10,8 @@ public class LevelPass : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        PlayerPrefs.SetInt("Coin", 0);
+        PlayerPrefs.SetFloat("Time", 0);
     }
 
     // Update is called once per frame
@@ -25,6 +26,8 @@ public class LevelPass : MonoBehaviour
         // {
             if (GameController.canPass)
             {
+                PlayerPrefs.SetInt("Coin", CoinUI.currentCoinQuantity + 200);
+                PlayerPrefs.SetFloat("Time", TimeLimit.timer);
                 SceneManager.LoadScene(sceneNum);
             }
         // }
