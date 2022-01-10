@@ -11,6 +11,7 @@ public class TimeLimit : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        timer = 0;
         text = GetComponent<Text>();
     }
     // Update is called once per frame
@@ -18,7 +19,6 @@ public class TimeLimit : MonoBehaviour
     {
         timer += Time.deltaTime;
         text.text = timer.ToString("000");
-        print(timer);
     }
 
 }

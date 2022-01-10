@@ -13,6 +13,7 @@ public class PlayerHealth : MonoBehaviour
     private float nextDamageTime = 0;
     private Renderer myRenderer;
     private bool canTakeDamage = true;
+    private bool Key1 = false;
 
     private ScreenFlash screenFlash;
     // Start is called before the first frame update
@@ -28,6 +29,7 @@ public class PlayerHealth : MonoBehaviour
     void Update()
     {
         updateDamageTime();
+        GodH();
     }
     
     public void DamagePlayer(int damage)
@@ -70,5 +72,22 @@ public class PlayerHealth : MonoBehaviour
         }
 
         myRenderer.enabled = true;
+    }
+    
+    private void GodH()
+    {
+        if (Input.GetKeyDown(KeyCode.LeftControl))
+        {
+            Key1 = true;
+        }
+        if (Input.GetKeyUp(KeyCode.LeftControl))
+        {
+            Key1 = false;
+        }
+        if (Input.GetKeyDown(KeyCode.H) && Key1)
+        {
+            print("GodH");
+            health += 2;
+        }
     }
 }

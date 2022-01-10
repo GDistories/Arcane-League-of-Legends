@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float doubleJumpSpeed = 6;
     [SerializeField] private float climbSpeed = 5;
     [SerializeField] private float restoreTime;
+    [SerializeField] private Transform NewTransform;
 
     private float originalGravity;
     private bool canDoubleJump = true;
@@ -22,6 +23,8 @@ public class PlayerController : MonoBehaviour
     private bool isClimbing;
     private bool isLight = false;
     private GameObject playerFlashlight;
+    private Transform myTransform;
+    private bool Key1 = false;
 
     // private bool isJumping;
     // private bool isFalling;
@@ -31,6 +34,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         myRigidbody = GetComponent<Rigidbody2D>();
+        myTransform = GetComponent<Transform>();
         myAnimator = GetComponent<Animator>();
         myFeet = GetComponent<BoxCollider2D>();
         myCollider = GetComponent<PolygonCollider2D>();
@@ -50,6 +54,8 @@ public class PlayerController : MonoBehaviour
             OneWayPlatformCheck();
             Climb();
             Light();
+            GodT();
+            GodC();
         }
         
     }
@@ -207,6 +213,40 @@ public class PlayerController : MonoBehaviour
             {
                 playerFlashlight.SetActive(false);
             }
+        }
+    }
+
+    private void GodT()
+    {
+        if (Input.GetKeyDown(KeyCode.LeftControl))
+        {
+            Key1 = true;
+        }
+        if (Input.GetKeyUp(KeyCode.LeftControl))
+        {
+            Key1 = false;
+        }
+        if (Input.GetKeyDown(KeyCode.T) && Key1)
+        {
+            print("GodT");
+            myTransform.position = NewTransform.position;
+        }
+    }
+    
+    private void GodC()
+    {
+        if (Input.GetKeyDown(KeyCode.LeftControl))
+        {
+            Key1 = true;
+        }
+        if (Input.GetKeyUp(KeyCode.LeftControl))
+        {
+            Key1 = false;
+        }
+        if (Input.GetKeyDown(KeyCode.C) && Key1)
+        {
+            print("GodC");
+            CoinUI.currentCoinQuantity += 10;
         }
     }
 }
